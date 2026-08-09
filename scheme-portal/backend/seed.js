@@ -1,7 +1,4 @@
-/**
- * Run this script once to create an admin user and sample schemes.
- * Usage: node seed.js
- */
+ //Usage: node seed.js
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 require('dotenv').config();
@@ -22,9 +19,9 @@ mongoose.connect(process.env.MONGO_URI).then(async () => {
       income: 0,
       role: 'admin'
     });
-    console.log('✅ Admin created: saadheraa@gmail.com / aadhe123');
+    console.log('Admin created: saadheraa@gmail.com / aadhe123');
   } else {
-    console.log('ℹ️  Admin already exists');
+    console.log('Admin already exists');
   }
 
   // Sample schemes
